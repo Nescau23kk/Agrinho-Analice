@@ -1,0 +1,74 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Agro forte, futuro sustentável</title>
+     <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <!-- Cabeçalho com título e descrição simples -->
+     <header class="site-header">
+         <div class="container">
+             <h1>Agro forte, futuro sustentável</h1>
+             <p>Um projeto simples para a turma do primeiro ano aprender sobre agricultura e meio ambiente.</p>
+         </div>
+     </header>
+ 
+     <!-- Conteúdo principal do site -->
+     <main class="container">
+         <!-- Seção de apresentação do tema -->
+         <section class="section-card">
+             <h2>O que vamos aprender?</h2>
+             <p>O Agrinho mostra como cuidar do solo, da água e das plantas para ter produção e natureza juntos.</p>
+         </section>
+ 
+         <!-- Seção com atividade bem simples e botões de navegação -->
+         <section class="section-card">
+             <h2>Atividade fácil</h2>
+             <p>Escolha uma opção para explorar o Agrinho:</p>
+             <div class="button-row">
+                 <button id="quiz-button" class="button">Ir para quiz</button>
+                 <button id="image-button" class="button">Ver imagem do Agrinho</button>
+                 <button id="search-button" class="button">Fazer pesquisa</button>
+             </div>
+             <p id="tip-text" class="tip-text">Clique em um botão acima para começar.</p>
+ 
+             <div id="quiz-panel" class="hidden-panel">
+                 <p><strong>Quiz:</strong> O que ajuda o solo a ficar mais forte?</p>
+                 <div class="button-row">
+                     <button data-answer="planta" class="button small-button">Plantar mais plantas</button>
+                     <button data-answer="agua" class="button small-button">Usar muita água</button>
+                     <button data-answer="queimar" class="button small-button">Queimar restos de planta</button>
+                 </div>
+                 <p id="quiz-feedback" class="tip-text"></p>
+             </div>
+ 
+             <div id="image-panel" class="hidden-panel">
+                 <p><strong>Imagem do Agrinho:</strong></p>
+                 <img id="agro-image" src="https://placeholder.com" alt="Imagem do Agrinho" />
+             <p class="tip-text">Esta imagem representa um campo sustentável e forte.</p>
+         </div>
+ 
+         <div id="search-panel" class="hidden-panel">
+             <p><strong>Pesquisa:</strong> encontre mais sobre Agrinho e sustentabilidade.</p>
+             <label>
+                 O que você quer pesquisar?
+                 <input id="search-input" type="text" placeholder="Digite um tema, por exemplo: agricultura sustentável" />
+             </label>
+             <button id="search-go" class="button">Pesquisar na internet</button>
+         </div>
+     </section>
+ 
+ </main>
+ 
+ <!-- Rodapé simples -->
+ <footer class="site-footer">
+     <div class="container">
+         <p>Projeto Agrinho 2026 - Tema: Agro forte, futuro sustentável</p>
+     </div>
+ </footer>
+ 
+ <script src="script.js"></script>
+ </body>
+ </html>
