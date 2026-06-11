@@ -1,74 +1,136 @@
-  <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Agro forte, futuro sustentável</title>
-     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-     <!-- Cabeçalho com título e descrição simples -->
-     <header class="site-header">
-         <div class="container">
-             <h1>Agro forte, futuro sustentável</h1>
-             <p>Um projeto simples para a turma do primeiro ano aprender sobre agricultura e meio ambiente.</p>
-         </div>
-     </header>
- 
-     <!-- Conteúdo principal do site -->
-     <main class="container">
-         <!-- Seção de apresentação do tema -->
-         <section class="section-card">
-             <h2>O que vamos aprender?</h2>
-             <p>O Agrinho mostra como cuidar do solo, da água e das plantas para ter produção e natureza juntos.</p>
-         </section>
- 
-         <!-- Seção com atividade bem simples e botões de navegação -->
-         <section class="section-card">
-             <h2>Atividade fácil</h2>
-             <p>Escolha uma opção para explorar o Agrinho:</p>
-             <div class="button-row">
-                 <button id="quiz-button" class="button">Ir para quiz</button>
-                 <button id="image-button" class="button">Ver imagem do Agrinho</button>
-                 <button id="search-button" class="button">Fazer pesquisa</button>
-             </div>
-             <p id="tip-text" class="tip-text">Clique em um botão acima para começar.</p>
- 
-             <div id="quiz-panel" class="hidden-panel">
-                 <p><strong>Quiz:</strong> O que ajuda o solo a ficar mais forte?</p>
-                 <div class="button-row">
-                     <button data-answer="planta" class="button small-button">Plantar mais plantas</button>
-                     <button data-answer="agua" class="button small-button">Usar muita água</button>
-                     <button data-answer="queimar" class="button small-button">Queimar restos de planta</button>
-                 </div>
-                 <p id="quiz-feedback" class="tip-text"></p>
-             </div>
- 
-             <div id="image-panel" class="hidden-panel">
-                 <p><strong>Imagem do Agrinho:</strong></p>
-                 <img id="agro-image" src="https://placeholder.com" alt="Imagem do Agrinho" />
-             <p class="tip-text">Esta imagem representa um campo sustentável e forte.</p>
-         </div>
- 
-         <div id="search-panel" class="hidden-panel">
-             <p><strong>Pesquisa:</strong> encontre mais sobre Agrinho e sustentabilidade.</p>
-             <label>
-                 O que você quer pesquisar?
-                 <input id="search-input" type="text" placeholder="Digite um tema, por exemplo: agricultura sustentável" />
-             </label>
-             <button id="search-go" class="button">Pesquisar na internet</button>
-         </div>
-     </section>
- 
- </main>
- 
- <!-- Rodapé simples -->
- <footer class="site-footer">
-     <div class="container">
-         <p>Projeto Agrinho 2026 - Tema: Agro forte, futuro sustentável</p>
-     </div>
- </footer>
- 
- <script src="script.js"></script>
- </body>
- </html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Agrinho 2026 - Agro forte, futuro sustentável: atividades, recursos e educação ambiental para escolas e comunidades.">
+	<title>Agrinho 2026 — Agro forte, futuro sustentável</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<a class="skip-link" href="#main">Pular para o conteúdo</a>
+		<header class="site-header">
+		<div class="container header-inner">
+			<h1>Agrinho 2026</h1>
+			<p class="tag">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+			<button id="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" class="menu-toggle">☰</button>
+			<nav id="primary-navigation" class="main-nav" data-visible="false">
+				<a href="#sobre">Sobre</a>
+				<a href="#atividades">Atividades</a>
+				<a href="#recursos">Recursos</a>
+				<a href="#ods">ODS</a>
+				<a href="#quiz" id="quiz-btn" class="btn small">Fazer Quiz</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="hero container">
+			<h2>Agro forte, futuro sustentável</h2>
+			<p class="lead">Educação e práticas agrícolas que conectam o Agrinho às metas da Agenda 2030.</p>
+			<a href="#ods" class="btn">Ver ODS</a>
+		</section>
+
+		<section id="sobre" class="container content">
+			<h3>Sobre o projeto</h3>
+			<p>O Agrinho combina educação, cidadania e meio ambiente para mostrar que a produção pode crescer sem prejudicar o planeta.</p>
+			<p class="edu">Trabalhamos com temas como conservação do solo, uso consciente da água, agroecologia e economia circular para tornar o campo mais forte e o futuro mais sustentável.</p>
+			<h4>Onde atuamos</h4>
+			<ul class="principles">
+				<li>Produção responsável e agricultura de baixo impacto.</li>
+				<li>Preservação do solo, da água e da biodiversidade local.</li>
+				<li>Inclusão social e educação nas escolas e comunidades.</li>
+			</ul>
+			<h4>Foco ODS</h4>
+			<p class="muted">Contribui diretamente para os Objetivos de Desenvolvimento Sustentável: ODS 2, 6, 12 e 13.</p>
+			<p>Use as seções abaixo para navegar pelo projeto: <a href="#ods">ODS</a> • <a href="#atividades">atividades</a> • <a href="#recursos">recursos</a> • <a href="#quiz">quiz</a></p>
+		</section>
+
+		<section id="atividades" class="container content">
+			<h3>Atividades sugeridas</h3>
+			<div class="cards">
+				<div class="card">
+					<h4>Horta escolar</h4>
+					<p>Atividade prática para aproximar os estudantes do cultivo e da alimentação saudável.</p>
+				</div>
+				<div class="card">
+					<h4>Compostagem</h4>
+					<p>Transformar resíduos orgânicos em adubo, reduzindo desperdício na escola.</p>
+				</div>
+				<div class="card">
+					<h4>Plantio consorciado</h4>
+					<p>Combinar culturas para fortalecer o solo e aumentar a diversidade no campo.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="recursos" class="container content">
+			<h3>Recursos e materiais</h3>
+			<p>Guias e sugestões simples para usar na escola com foco em produção responsável e ODS.</p>
+			<ul class="resources">
+				<li><a href="#atividades">Atividades práticas</a></li>
+				<li><a href="#ods">Objetivos de Desenvolvimento Sustentável</a></li>
+				<li><a href="#quiz">Quiz educativo</a></li>
+			</ul>
+		</section>
+
+		<section id="ods" class="container content">
+			<h3>ODS relacionados</h3>
+			<p>O projeto conecta práticas simples à Agenda 2030 de forma direta e acessível.</p>
+			<div class="ods-grid">
+				<div class="ods-card">
+					<div class="ods-number">2</div>
+					<h4>Fome Zero</h4>
+					<p>Promover alimentos saudáveis por meio da horta escolar.</p>
+				</div>
+				<div class="ods-card">
+					<div class="ods-number">6</div>
+					<h4>Água Limpa</h4>
+					<p>Usar água com consciência nas atividades no campo.</p>
+				</div>
+				<div class="ods-card">
+					<div class="ods-number">12</div>
+					<h4>Consumo Responsável</h4>
+					<p>Reduzir desperdício e reaproveitar resíduos orgânicos.</p>
+				</div>
+				<div class="ods-card">
+					<div class="ods-number">13</div>
+					<h4>Ação Climática</h4>
+					<p>Incentivar práticas agrícolas que preservam clima e solo.</p>
+				</div>
+			</div>
+		</section>
+		<section id="como-implementar" class="container content">
+			<h3>Como implementar no seu espaço</h3>
+			<p>Passos práticos para começar: identificar local, medir luz e água, planejar a rotação de culturas, e envolver a comunidade escolar.</p>
+			<ol>
+				<li>Mapear espaço e recursos disponíveis.</li>
+				<li>Definir objetivos de aprendizagem com a turma.</li>
+				<li>Planejar atividades anuais e registro de resultados.</li>
+			</ol>
+		</section>
+
+		<section id="indicadores" class="container content">
+			<h3>Indicadores de sucesso</h3>
+			<p>Algumas métricas simples para acompanhar o impacto: variedade de espécies plantadas, quantidade de composto produzido, número de alunos envolvidos e redução de desperdício.</p>
+		</section>
+
+		<section id="quiz" class="container content quiz-section">
+			<h3>Quiz: Sustentabilidade no Agro</h3>
+			<p class="edu">Teste seus conhecimentos e receba orientações práticas ao final.</p>
+			<div id="quiz-progress" aria-hidden="true"><div class="progress-bar"></div></div>
+			<div id="quiz-container" class="quiz-large"></div>
+		</section>
+	</main>
+
+	<footer class="site-footer container">
+		<p>Projeto Agrinho — Tema: Agro forte, futuro sustentável.</p>
+		<p>Conteúdo educativo para escolas e comunidades. <a href="#">Termos</a> • <a href="#">Contato</a></p>
+	</footer>
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
