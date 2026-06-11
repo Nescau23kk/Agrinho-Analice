@@ -1,136 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Agrinho 2026 - Agro forte, futuro sustentável: atividades, recursos e educação ambiental para escolas e comunidades.">
-	<title>Agrinho 2026 — Agro forte, futuro sustentável</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrinho 2026 - Agro forte, futuro sustentável</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div class="page">
-		<a class="skip-link" href="#main">Pular para o conteúdo</a>
-		<header class="site-header">
-		<div class="container header-inner">
-			<h1>Agrinho 2026</h1>
-			<p class="tag">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
-			<button id="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" class="menu-toggle">☰</button>
-			<nav id="primary-navigation" class="main-nav" data-visible="false">
-				<a href="#sobre">Sobre</a>
-				<a href="#atividades">Atividades</a>
-				<a href="#recursos">Recursos</a>
-				<a href="#ods">ODS</a>
-				<a href="#quiz" id="quiz-btn" class="btn small">Fazer Quiz</a>
-			</nav>
-		</div>
-	</header>
+  <!-- Menu de navegação fixo -->
+  <header class="site-header">
+    <div class="logo">Agrinho 2026</div>
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="#hero">Início</a>
+      <a href="#sustentavel">Agro Sustentável</a>
+      <a href="#desafios">Desafios</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#timeline">Linha do Tempo</a>
+      <a href="#ajudar">Como Ajudar</a>
+    </nav>
+  </header>
 
-	<main id="main">
-		<section class="hero container">
-			<h2>Agro forte, futuro sustentável</h2>
-			<p class="lead">Educação e práticas agrícolas que conectam o Agrinho às metas da Agenda 2030.</p>
-			<a href="#ods" class="btn">Ver ODS</a>
-		</section>
+  <!-- Seção inicial / Hero -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Agrinho 2026</p>
+        <h1>Agro forte, futuro sustentável</h1>
+        <p class="hero-text">Reunir produção agrícola e cuidado com a natureza é a chave para formar uma geração mais consciente e preparada.</p>
+        <a href="#sustentavel" class="primary-button">Conhecer mais</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="circle sun"></div>
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        <div class="field"></div>
+      </div>
+    </section>
 
-		<section id="sobre" class="container content">
-			<h3>Sobre o projeto</h3>
-			<p>O Agrinho combina educação, cidadania e meio ambiente para mostrar que a produção pode crescer sem prejudicar o planeta.</p>
-			<p class="edu">Trabalhamos com temas como conservação do solo, uso consciente da água, agroecologia e economia circular para tornar o campo mais forte e o futuro mais sustentável.</p>
-			<h4>Onde atuamos</h4>
-			<ul class="principles">
-				<li>Produção responsável e agricultura de baixo impacto.</li>
-				<li>Preservação do solo, da água e da biodiversidade local.</li>
-				<li>Inclusão social e educação nas escolas e comunidades.</li>
-			</ul>
-			<h4>Foco ODS</h4>
-			<p class="muted">Contribui diretamente para os Objetivos de Desenvolvimento Sustentável: ODS 2, 6, 12 e 13.</p>
-			<p>Use as seções abaixo para navegar pelo projeto: <a href="#ods">ODS</a> • <a href="#atividades">atividades</a> • <a href="#recursos">recursos</a> • <a href="#quiz">quiz</a></p>
-		</section>
+    <!-- Seção Agro Sustentável -->
+    <section class="section-block" id="sustentavel">
+      <div class="section-header reveal">
+        <span>O que é o Agro Sustentável?</span>
+        <h2>Produção e meio ambiente caminhando juntos</h2>
+        <p>O agro sustentável combina tecnologia, respeito à natureza e práticas sociais responsáveis para garantir alimento, água e uma vida saudável para as próximas gerações.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="info-card reveal">
+          <div class="card-icon">💧</div>
+          <h3>Uso consciente da água</h3>
+          <p>Aprender a irrigar na hora certa e aproveitar a chuva ajuda a preservar os recursos hídricos.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="card-icon">🌱</div>
+          <h3>Preservação da biodiversidade</h3>
+          <p>Manter matas ciliares e áreas naturais protege plantas, animais e a qualidade do solo.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="card-icon">📡</div>
+          <h3>Agricultura de precisão</h3>
+          <p>Tecnologias ajudam a aplicar nutrientes apenas onde a planta precisa, reduzindo desperdício.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="card-icon">♻️</div>
+          <h3>Redução do desperdício</h3>
+          <p>Planejar a colheita e reaproveitar recursos faz o alimento chegar melhor ao campo e à mesa.</p>
+        </article>
+      </div>
+    </section>
 
-		<section id="atividades" class="container content">
-			<h3>Atividades sugeridas</h3>
-			<div class="cards">
-				<div class="card">
-					<h4>Horta escolar</h4>
-					<p>Atividade prática para aproximar os estudantes do cultivo e da alimentação saudável.</p>
-				</div>
-				<div class="card">
-					<h4>Compostagem</h4>
-					<p>Transformar resíduos orgânicos em adubo, reduzindo desperdício na escola.</p>
-				</div>
-				<div class="card">
-					<h4>Plantio consorciado</h4>
-					<p>Combinar culturas para fortalecer o solo e aumentar a diversidade no campo.</p>
-				</div>
-			</div>
-		</section>
+    <!-- Desafios e Soluções -->
+    <section class="section-block alt-background" id="desafios">
+      <div class="section-header reveal">
+        <span>Desafios e soluções</span>
+        <h2>Transformando cada desafio em esperança</h2>
+        <p>Conheça os problemas que o agro enfrenta e veja como ações sustentáveis podem virar respostas reais.</p>
+      </div>
+      <div class="challenge-grid">
+        <article class="challenge-card reveal">
+          <h3>Desafio</h3>
+          <p>Esgotamento do solo por cultivos repetidos sem descanso.</p>
+          <h4>Solução</h4>
+          <p>Rotação de culturas e cobertura vegetal renovam os nutrientes e mantêm a terra saudável.</p>
+        </article>
+        <article class="challenge-card reveal">
+          <h3>Desafio</h3>
+          <p>Contaminação de rios e córregos por agrotóxicos e fertilizantes.</p>
+          <h4>Solução</h4>
+          <p>Uso de produtos naturais, proteção de margens e manejo integrado reduz impactos.</p>
+        </article>
+        <article class="challenge-card reveal">
+          <h3>Desafio</h3>
+          <p>Perda de biodiversidade e habitats naturais.</p>
+          <h4>Solução</h4>
+          <p>Preservar áreas de vegetação nativa e criar corredores ecológicos no campo.</p>
+        </article>
+      </div>
+    </section>
 
-		<section id="recursos" class="container content">
-			<h3>Recursos e materiais</h3>
-			<p>Guias e sugestões simples para usar na escola com foco em produção responsável e ODS.</p>
-			<ul class="resources">
-				<li><a href="#atividades">Atividades práticas</a></li>
-				<li><a href="#ods">Objetivos de Desenvolvimento Sustentável</a></li>
-				<li><a href="#quiz">Quiz educativo</a></li>
-			</ul>
-		</section>
+    <!-- Quiz Interativo -->
+    <section class="section-block" id="quiz">
+      <div class="section-header reveal">
+        <span>Quiz Interativo</span>
+        <h2>Teste seu conhecimento sobre sustentabilidade no campo</h2>
+        <p>Responda as perguntas e descubra como você pode ser parte da transformação.</p>
+      </div>
+      <div class="quiz-card reveal">
+        <form id="quiz-form" aria-labelledby="quiz-title">
+          <div id="quiz-questions"></div>
+          <button type="submit" class="secondary-button">Enviar respostas</button>
+        </form>
+        <div id="quiz-result" class="quiz-result" aria-live="polite"></div>
+      </div>
+    </section>
 
-		<section id="ods" class="container content">
-			<h3>ODS relacionados</h3>
-			<p>O projeto conecta práticas simples à Agenda 2030 de forma direta e acessível.</p>
-			<div class="ods-grid">
-				<div class="ods-card">
-					<div class="ods-number">2</div>
-					<h4>Fome Zero</h4>
-					<p>Promover alimentos saudáveis por meio da horta escolar.</p>
-				</div>
-				<div class="ods-card">
-					<div class="ods-number">6</div>
-					<h4>Água Limpa</h4>
-					<p>Usar água com consciência nas atividades no campo.</p>
-				</div>
-				<div class="ods-card">
-					<div class="ods-number">12</div>
-					<h4>Consumo Responsável</h4>
-					<p>Reduzir desperdício e reaproveitar resíduos orgânicos.</p>
-				</div>
-				<div class="ods-card">
-					<div class="ods-number">13</div>
-					<h4>Ação Climática</h4>
-					<p>Incentivar práticas agrícolas que preservam clima e solo.</p>
-				</div>
-			</div>
-		</section>
-		<section id="como-implementar" class="container content">
-			<h3>Como implementar no seu espaço</h3>
-			<p>Passos práticos para começar: identificar local, medir luz e água, planejar a rotação de culturas, e envolver a comunidade escolar.</p>
-			<ol>
-				<li>Mapear espaço e recursos disponíveis.</li>
-				<li>Definir objetivos de aprendizagem com a turma.</li>
-				<li>Planejar atividades anuais e registro de resultados.</li>
-			</ol>
-		</section>
+    <!-- Linha do Tempo -->
+    <section class="section-block alt-background" id="timeline">
+      <div class="section-header reveal">
+        <span>Linha do Tempo</span>
+        <h2>Da agricultura tradicional ao futuro sustentável</h2>
+        <p>Veja como o campo evoluiu ao longo do tempo e como o futuro significa equilíbrio entre produção e natureza.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-point"></div>
+          <div>
+            <h3>Passado</h3>
+            <p>Plantio manual e pequenos terrenos, com muita sabedoria local.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-point"></div>
+          <div>
+            <h3>Presente</h3>
+            <p>Tecnologia e cuidado com a natureza andam juntos em estratégias mais precisas.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-point"></div>
+          <div>
+            <h3>Futuro</h3>
+            <p>Sistemas de agricultura regenerativa e energia limpa ampliam a sustentabilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section id="indicadores" class="container content">
-			<h3>Indicadores de sucesso</h3>
-			<p>Algumas métricas simples para acompanhar o impacto: variedade de espécies plantadas, quantidade de composto produzido, número de alunos envolvidos e redução de desperdício.</p>
-		</section>
+    <!-- Como posso ajudar? -->
+    <section class="section-block" id="ajudar">
+      <div class="section-header reveal">
+        <span>Como posso ajudar?</span>
+        <h2>Pequenas atitudes fazem um grande agro</h2>
+        <p>A responsabilidade começa com cada um de nós, mesmo fora do campo.</p>
+      </div>
+      <div class="help-grid">
+        <article class="help-card reveal">
+          <div class="help-icon">🌍</div>
+          <h3>Valorizar o alimento</h3>
+          <p>Evite desperdício e aprenda a reaproveitar ingredientes na cozinha.</p>
+        </article>
+        <article class="help-card reveal">
+          <div class="help-icon">🚲</div>
+          <h3>Consumir local</h3>
+          <p>Prefira produtos da região, apoiando agricultores e reduzindo transporte.</p>
+        </article>
+        <article class="help-card reveal">
+          <div class="help-icon">💡</div>
+          <h3>Economizar energia</h3>
+          <p>Desligue aparelhos e escolha fontes renováveis sempre que possível.</p>
+        </article>
+        <article class="help-card reveal">
+          <div class="help-icon">🪴</div>
+          <h3>Cuidar do verde</h3>
+          <p>Plante árvores, cultive hortas ou participe de projetos de restauração.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-		<section id="quiz" class="container content quiz-section">
-			<h3>Quiz: Sustentabilidade no Agro</h3>
-			<p class="edu">Teste seus conhecimentos e receba orientações práticas ao final.</p>
-			<div id="quiz-progress" aria-hidden="true"><div class="progress-bar"></div></div>
-			<div id="quiz-container" class="quiz-large"></div>
-		</section>
-	</main>
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <p>Um agro forte e um meio ambiente saudável podem caminhar juntos para um futuro sustentável.</p>
+    <small>Projeto Agrinho 2026 • Criado por Analice Rodigues de Paula.</small>
+  </footer>
 
-	<footer class="site-footer container">
-		<p>Projeto Agrinho — Tema: Agro forte, futuro sustentável.</p>
-		<p>Conteúdo educativo para escolas e comunidades. <a href="#">Termos</a> • <a href="#">Contato</a></p>
-	</footer>
-
-	</div>
-	<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
